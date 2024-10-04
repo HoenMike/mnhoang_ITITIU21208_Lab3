@@ -21,6 +21,12 @@
         margin: 0 auto;
         padding: 20px;
       }
+      .container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
       header {
         display: flex;
         justify-content: space-between;
@@ -36,6 +42,13 @@
       }
       nav ul li {
         margin-left: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
       }
       .main-title,
       .subtitle,
@@ -61,7 +74,7 @@
       }
       .projects ul li {
         display: block;
-        margin: 0 10px;
+        margin: 10px 0;
       }
       .work-experience ul,
       .education ul {
@@ -130,22 +143,28 @@
     </style>
   </head>
   <body>
-    <header>
-      <div>
-        <h1>your name</h1>
-      </div>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Articles</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header>
+        <div style="display: flex; align-items: center">
+          <img src="icon.png" alt="Icon" style="width: 50px; height: 50px; margin-right: 10px" />
+          <h1>Mai Nguyên Hoàng</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>/</li>
+            <li><a href="#">Projects</a></li>
+            <li>/</li>
+            <li><a href="#">Articles</a></li>
+            <li>/</li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <h2 class="main-title">Frontend Developer</h2>
-    <p class="subtitle">html only with proper layout, no styling</p>
+      <h2 class="main-title">Frontend Developer</h2>
+      <p class="subtitle">html only with proper layout, no styling</p>
+    </div>
 
     <div class="content">
       <section class="projects">
@@ -165,14 +184,14 @@
           <li>
             <h4>roadmap.sh</h4>
             <p>Solved all the frontend projects</p>
-            <a href="#">Visit my Profile</a>
+            <a href="#" style="color: dodgerblue">Visit my Profile</a>
           </li>
           <li>
             <h4>OpenSource Work</h4>
             <p>
               Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.
             </p>
-            <a href="#">Visit my GitHub Profile</a>
+            <a href="#" style="color: dodgerblue">Visit my GitHub Profile</a>
           </li>
         </ul>
       </section>
